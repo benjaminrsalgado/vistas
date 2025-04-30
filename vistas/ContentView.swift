@@ -31,7 +31,7 @@ struct PerfilView: View{
             Image("Perfil")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 200, height: 200)
+                .frame(width: 150, height: 200)
                 .clipShape(Circle())
                 .shadow(radius: 15)
             
