@@ -10,15 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color.green.edgesIgnoringSafeArea(.all)
-            VStack {
-                Text("Title")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-
-                Spacer()
-            }
-            .padding()
+            Text("Layer 1")
+                .zIndex(1)
+            Text("Layer 2")
+                .zIndex(0)
         }
     }
 }
