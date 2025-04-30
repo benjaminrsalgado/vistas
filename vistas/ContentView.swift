@@ -9,17 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            HStack {
-                Text("Column 1 - Row 1")
-                Text("Column 2 - Row 1")
-            }
-
-            HStack {
-                Text("Column 1 - Row 2")
-                Text("Column 2 - Row 2")
-            }
+        ZStack {
+            Color.red
+            Circle()
+                .fill(Color.yellow)
+                .frame(width: 300, height: 900)
+            Text("Layered View")
+                .foregroundColor(.white)
         }
+
     }
 }
 
